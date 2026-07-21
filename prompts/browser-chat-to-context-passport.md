@@ -27,7 +27,7 @@ Then follow this decision rule:
 
 Do not mix unrelated topics into one Context Passport just to finish in one response.
 
-Create a Markdown document with the following sections:
+When the decision rule says to generate a Context Passport, create a Markdown document with the following sections:
 
 1. Title
 2. Purpose of the passport

@@ -122,6 +122,7 @@ context-passport/
   README.md
   docs/
     product-strategy.md
+    references.md
     pt-BR/
       como-usar-no-browser.md
   prompts/
@@ -206,6 +207,10 @@ This repository starts as a practical method, template library, and Codex plugin
 - MCP servers;
 - connectors for ChatGPT, Claude, or other export formats;
 - repository-aware agent integrations.
+
+## References
+
+See [`docs/references.md`](docs/references.md) for official references related to file generation, file downloads, model choice, and Mermaid rendering on GitHub.
 
 ## Positioning
 

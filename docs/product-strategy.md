@@ -130,7 +130,7 @@ Potential roadmap:
 
 Article 1:
 
-> You are not locked into ChatGPT. You are missing a context passport.
+> You are not locked into one AI tool. You are missing a context passport.
 
 Article 2:
 
@@ -139,4 +139,3 @@ Article 2:
 Article 3:
 
 > Memory is not enough. Context portability is the next AI workflow skill.
-

@@ -35,7 +35,7 @@ Depois siga esta regra de decisao:
 
 Nao misture temas diferentes em um unico Context Passport so para terminar em uma resposta.
 
-Gere um documento em texto Markdown com estas secoes:
+Quando a regra de decisao indicar que devo gerar um Context Passport, gere um documento em texto Markdown com estas secoes:
 
 1. Titulo
 2. Objetivo original da conversa
