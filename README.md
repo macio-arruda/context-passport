@@ -18,7 +18,9 @@ Context Passport proposes a simple alternative:
 
 ```mermaid
 flowchart LR
-    A["Browser AI Chat"] -->|"ChatGPT, Claude, Gemini, or another chat"| B["Context Passport"]
+    A["Browser AI Chat"] -->|"one important conversation"| B["Context Passport"]
+    I["Accessible AI Context"] -->|"project memory, previous chats, files, or saved memories"| J["Context Inventory"]
+    J -->|"one passport per theme"| B
     G["Agent Session"] -->|"Codex, Claude Code, Cursor, or another agent"| B
 
     B -->|"resume prompt + project brief"| C["Any Browser AI"]
@@ -39,7 +41,11 @@ You do not need to install anything.
 
 You do not need Git, a plugin, an API key, or technical setup.
 
-Use Context Passport with copy and paste:
+Use Context Passport with copy and paste. There are two browser modes.
+
+### Mode 1: one important chat
+
+Use this when the context is mainly inside one long conversation.
 
 1. Open an important chat in ChatGPT, Claude, Gemini, or another AI tool.
 2. Select the strongest model or reasoning mode available for that tool, especially for long or mixed-topic chats.
@@ -58,6 +64,25 @@ If the chat mixes many subjects, Context Passport should first create a **Topic 
 
 Important: if the original chat is extremely long or depends on attachments the AI can no longer access, the first passport may be incomplete. In that case, create a Topic Map first, paste the missing source material, and regenerate the passport for one topic at a time.
 
+### Mode 2: accessible context scan
+
+Use this when your context is spread across a ChatGPT Project, Claude Project, previous chats, saved memories, uploaded files, or a workspace that can reference prior work.
+
+1. Open a new chat in the tool that already has the context.
+2. Select the strongest model or reasoning mode available.
+3. Copy the prompt from [`prompts/accessible-context-to-context-passport.md`](prompts/accessible-context-to-context-passport.md).
+4. Ask for a **Context Inventory** first.
+5. Review the topics, confidence levels, gaps, and suggested manual search terms.
+6. Pick the topic you want to transfer.
+7. Ask the AI to generate `context-passport-[topic].md`.
+8. Take that passport to the next AI tool.
+
+This is the broader workflow:
+
+> accessible project/history context -> Context Inventory -> focused Context Passport -> destination AI
+
+Important: this is not a promise of perfect export from every platform. The AI can only use context the product, plan, memory settings, project settings, and current chat actually make available. If the inventory has gaps, use the original tool's search, paste missing excerpts, or move relevant chats/files into the project before generating the final passport.
+
 Model choice matters. A fast/default model can work for simple chats, but important handoffs benefit from the most capable model or reasoning setting available. In ChatGPT, use Thinking, higher reasoning effort, or Pro when available for long, sensitive, or mixed-topic conversations.
 
 The browser version does not depend on folder access or one-click automation. ChatGPT, Claude, and Gemini all have documented file-generation or file-download paths in supported surfaces, but details vary by tool, plan, workspace, file type, and interface. If a real file is created, download it. If not, use the copy/paste fallback. The assistant should never invent a fake download link.
@@ -67,6 +92,10 @@ The browser version does not depend on folder access or one-click automation. Ch
 If your audience is Portuguese-speaking, use:
 
 [`prompts/pt-BR/chat-do-browser-para-context-passport.md`](prompts/pt-BR/chat-do-browser-para-context-passport.md)
+
+For the accessible-context scan mode, use:
+
+[`prompts/pt-BR/contexto-acessivel-para-context-passport.md`](prompts/pt-BR/contexto-acessivel-para-context-passport.md)
 
 Portuguese quick guide:
 
@@ -82,11 +111,13 @@ Use this when you have:
 
 - a long chat with decisions and useful work;
 - a ChatGPT Project or Claude Project you want to continue elsewhere;
+- context spread across accessible project memory, previous chats, files, or saved memories;
 - a research thread you want to reuse in another model;
 - students or teams who think changing AI tools means losing all accumulated context.
 
 Output examples:
 
+- `context-inventory.md`
 - `context-passport.md`
 - `project-brief.md`
 - `decisions.md`
@@ -127,11 +158,14 @@ context-passport/
       como-usar-no-browser.md
   prompts/
     browser-chat-to-context-passport.md
+    accessible-context-to-context-passport.md
     agent-session-to-handoff.md
     pt-BR/
       chat-do-browser-para-context-passport.md
+      contexto-acessivel-para-context-passport.md
   templates/
     topic-map.md
+    context-inventory.md
     context-passport.md
     agent-handoff.md
     resume-prompt.md
@@ -186,10 +220,22 @@ For browser chats:
 Use prompts/browser-chat-to-context-passport.md on this conversation and generate a Context Passport pack.
 ```
 
+For context spread across a project, memory, files, or accessible previous chats:
+
+```text
+Use prompts/accessible-context-to-context-passport.md and create a Context Inventory before generating any Context Passport.
+```
+
 In Portuguese:
 
 ```text
 Use prompts/pt-BR/chat-do-browser-para-context-passport.md nesta conversa e gere um Context Passport.
+```
+
+Or, for accessible context discovery:
+
+```text
+Use prompts/pt-BR/contexto-acessivel-para-context-passport.md para criar primeiro um Inventario de Contexto.
 ```
 
 For agent sessions:

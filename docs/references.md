@@ -2,6 +2,13 @@
 
 These references support a few practical notes in this repository, especially around file generation, file downloads, and model choice.
 
+## ChatGPT projects, memory, and history search
+
+- OpenAI Help Center: [Projects in ChatGPT](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt)
+- OpenAI Help Center: [Como pesquiso meu historico de chats no ChatGPT?](https://help.openai.com/pt-br/articles/10056348-como-pesquiso-meu-hist%C3%B3rico-de-chats-no-chatgpt)
+- OpenAI Help Center: [Memory FAQ](https://help.openai.com/en/articles/8590148-memory-faq)
+- OpenAI Help Center: [Perguntas frequentes sobre Memoria](https://help.openai.com/pt-br/articles/8590148-perguntas-frequentes-sobre-mem%EF%BF%BDria)
+
 ## File generation and downloads
 
 - OpenAI Help Center: [File storage and Library in ChatGPT](https://help.openai.com/en/articles/20001052-library-for-chatgpt)
@@ -17,4 +24,3 @@ These references support a few practical notes in this repository, especially ar
 ## Markdown diagrams
 
 - GitHub Docs: [Creating diagrams in Markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
-

@@ -1,10 +1,15 @@
 # Como usar no browser
 
-Este guia e para quem usa IA pelo navegador e quer levar o contexto de uma conversa para outra IA.
+Este guia e para quem usa IA pelo navegador e quer levar contexto para outra IA.
 
 Voce nao precisa instalar nada.
 
-## Caso simples
+Existem dois modos principais:
+
+- **uma conversa especifica:** quando o trabalho esta concentrado em um chat antigo;
+- **contexto acessivel:** quando o trabalho esta espalhado em projeto, memoria, arquivos ou conversas anteriores que a ferramenta consegue referenciar.
+
+## Modo 1: uma conversa especifica
 
 Use quando a conversa tem um tema principal.
 
@@ -22,11 +27,52 @@ Use quando a conversa tem um tema principal.
 
 Pronto. A nova IA deve conseguir continuar o trabalho.
 
+## Modo 2: contexto acessivel
+
+Use quando voce quer fazer o que muita gente faz no ChatGPT: abrir um chat novo dentro de um projeto ou workspace e pedir para a IA levantar o que ela consegue encontrar sobre um tema.
+
+Esse modo serve para casos como:
+
+- "busque tudo que voce sabe sobre este projeto";
+- "levante todos os temas de IA generativa que discutimos";
+- "crie um handoff da pre-venda do Metro de Sao Paulo";
+- "olhe os chats e arquivos deste projeto e diga quais passaportes devo gerar".
+
+Use o prompt:
+
+[`prompts/pt-BR/contexto-acessivel-para-context-passport.md`](../../prompts/pt-BR/contexto-acessivel-para-context-passport.md)
+
+Passo a passo:
+
+1. Abra um chat novo na ferramenta onde o contexto ja existe.
+2. Se for ChatGPT, prefira fazer isso dentro do projeto correto, quando houver um projeto.
+3. Use o modelo mais capaz ou o modo de raciocinio mais forte disponivel.
+4. Cole o prompt de contexto acessivel.
+5. Peca primeiro um **Inventario de Contexto**, nao o passaporte final.
+6. Revise os temas encontrados, fontes, nivel de confianca e lacunas.
+7. Escolha qual tema deve virar passaporte.
+8. Peca para gerar `context-passport-[tema].md`.
+9. Leve esse arquivo para a outra IA.
+
+Fluxo:
+
+> contexto acessivel -> Inventario de Contexto -> Context Passport focado -> nova IA
+
+Esse modo nao e uma exportacao magica de todos os chats. Ele depende do que a ferramenta consegue realmente acessar naquele momento, das configuracoes de memoria, do plano, do projeto, dos arquivos anexados e do historico disponivel.
+
+Se o inventario vier fraco ou incompleto, faca um reforco manual:
+
+1. Use a busca do ChatGPT, Claude, Gemini ou da ferramenta original.
+2. Procure por palavras-chave do tema.
+3. Abra os chats relevantes.
+4. Cole trechos importantes no chat que esta gerando o inventario.
+5. Gere novamente o Inventario de Contexto.
+
 ## Escolha do modelo
 
 A qualidade do Context Passport depende da qualidade do modelo que vai ler a conversa antiga.
 
-Para chats simples, um modelo rapido pode funcionar. Para conversas longas, temas misturados, decisoes importantes ou contexto sensivel, prefira o modelo mais forte disponivel.
+Para chats simples, um modelo rapido pode funcionar. Para conversas longas, temas misturados, decisoes importantes, contexto sensivel ou varredura de contexto acessivel, prefira o modelo mais forte disponivel.
 
 No ChatGPT, isso significa usar Thinking, maior nivel de raciocinio ou Pro quando estiver disponivel. A documentacao atual da OpenAI descreve Instant como uma opcao rapida para tarefas do dia a dia, Thinking como raciocinio mais profundo para tarefas complexas, e Pro como a opcao de maior capacidade para tarefas dificeis e fluxos longos.
 
@@ -34,7 +80,8 @@ Em resumo:
 
 - chat simples: modelo rapido pode bastar;
 - chat longo ou importante: use modelo mais capaz;
-- varios temas misturados: use raciocinio mais forte e gere primeiro um Mapa de Temas.
+- varios temas misturados: use raciocinio mais forte e gere primeiro um Mapa de Temas;
+- contexto espalhado em projeto/historico: gere primeiro um Inventario de Contexto.
 
 ## Se o chat mistura muitos assuntos
 
@@ -93,6 +140,7 @@ Pode falhar ou ficar incompleto quando:
 
 - o chat antigo e longo demais;
 - a conversa misturou muitos assuntos;
+- a IA nao tem permissao/configuracao para referenciar chats, memorias, projetos ou arquivos antigos;
 - arquivos ou imagens foram citados, mas a IA nao consegue mais acessa-los;
 - partes importantes estavam em anexos que nao foram incluidos;
 - a IA gerou um resumo generico demais;

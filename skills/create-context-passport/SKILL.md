@@ -11,6 +11,7 @@ Use this skill to convert messy AI history into a structured, portable context p
 
 Create the smallest useful set of files for the user's destination:
 
+- `context-inventory.md` when the source is broad, multi-topic, or spread across accessible memory/history/files.
 - `context-passport.md` for browser-chat or project knowledge transfer.
 - `agent-handoff.md` for coding-agent session transfer.
 - `resume-prompt.md` for copy/paste continuation.
@@ -19,11 +20,12 @@ Create the smallest useful set of files for the user's destination:
 ## Workflow
 
 1. Identify the source and destination.
-   - Source examples: ChatGPT browser chat, Claude chat, exported Markdown, exported JSON, current Codex session, project notes.
+   - Source examples: ChatGPT browser chat, Claude chat, accessible project context, saved memories, exported Markdown, exported JSON, current Codex session, project notes.
    - Destination examples: ChatGPT, Claude, Codex, Claude Code, Cursor, Gemini, generic Markdown.
 
 2. Extract operational context.
    - If the source mixes unrelated subjects, create a topic map before writing the final passport.
+   - If the user asks to discover context across a project, memory, previous chats, or files, create a context inventory first and clearly mark what was actually accessible.
    - Original goal.
    - How the goal evolved.
    - Chronology.
@@ -40,6 +42,7 @@ Create the smallest useful set of files for the user's destination:
 
 3. Choose the right template.
    - Mixed conversation: start with `templates/topic-map.md`.
+   - Broad accessible context discovery: start with `templates/context-inventory.md`.
    - Browser/project migration: use `templates/context-passport.md`.
    - Agent/coding migration: use `templates/agent-handoff.md`.
    - Generic continuation: include `templates/resume-prompt.md`.

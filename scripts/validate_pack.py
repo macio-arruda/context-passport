@@ -33,6 +33,15 @@ REQUIRED_SECTIONS = {
         "Topic Details",
         "Cross-Topic Notes",
     ],
+    "context-inventory": [
+        "Purpose",
+        "Scope Requested",
+        "Accessible Sources",
+        "Inaccessible Sources",
+        "Topic Inventory",
+        "Recommended Passports",
+        "Next Action",
+    ],
 }
 
 

@@ -57,10 +57,16 @@ Problem:
 
 Promise:
 
-> Convert important AI conversations into portable context packs.
+> Convert important AI conversations and accessible project context into portable context packs.
+
+Primary modes:
+
+- single-chat passport, when the useful context is concentrated in one conversation;
+- accessible-context inventory, when the useful context is spread across a project, previous chats, memories, or uploaded files that the AI tool can reference.
 
 Primary artifacts:
 
+- `context-inventory.md`;
 - `context-passport.md`;
 - `project-brief.md`;
 - `decisions.md`;
@@ -119,7 +125,7 @@ No browser extension, scraping, authentication, or private API access in the fir
 Potential roadmap:
 
 1. Parse ChatGPT and Claude exported JSON files.
-2. Generate project-level passports from many conversations.
+2. Generate project-level passports from many conversations or accessible project context.
 3. Add browser extension export button.
 4. Add MCP server for live retrieval.
 5. Add destination adapters for Codex, Claude Code, Cursor, and ChatGPT Projects.
