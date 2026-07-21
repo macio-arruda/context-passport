@@ -54,7 +54,7 @@ If the chat mixes many subjects, Context Passport should first create a **Topic 
 
 Important: if the original chat is extremely long or depends on attachments the AI can no longer access, the first passport may be incomplete. In that case, create a Topic Map first, paste the missing source material, and regenerate the passport for one topic at a time.
 
-The browser version does not depend on folder access or one-click automation. ChatGPT can create files in supported surfaces, while other tools may vary. If a real file is created, download it. If not, use the copy/paste fallback. The assistant should never invent a fake download link.
+The browser version does not depend on folder access or one-click automation. ChatGPT, Claude, and Gemini all have documented file-generation or file-download paths in supported surfaces, but details vary by tool, plan, workspace, file type, and interface. If a real file is created, download it. If not, use the copy/paste fallback. The assistant should never invent a fake download link.
 
 ### Prompt in Portuguese
 

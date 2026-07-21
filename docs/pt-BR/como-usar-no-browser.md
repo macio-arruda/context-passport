@@ -61,7 +61,7 @@ Se a nova IA nao conseguir responder isso, o passaporte ficou fraco e deve ser g
 
 No ChatGPT pelo browser ou desktop, e comum conseguir pedir um arquivo real para download, como `context-passport.md`. A propria documentacao da OpenAI fala em arquivos criados no ChatGPT e salvos na Biblioteca.
 
-Em outras ferramentas, como Claude, Gemini ou outros chats no browser, esse comportamento pode variar.
+Claude e Gemini tambem documentam recursos de criacao ou download de arquivos em superficies compatíveis. Mesmo assim, o comportamento pode variar conforme ferramenta, plano, workspace, tipo de arquivo e interface.
 
 Por isso, existem dois caminhos validos:
 
