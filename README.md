@@ -1,6 +1,6 @@
 # Context Passport
 
-Move an AI conversation from one tool to another without losing context.
+Move AI context from one tool to another without losing continuity.
 
 Context Passport turns long AI conversations, project chats, research threads, and agent sessions into structured handoff packs that can be reused in ChatGPT, Claude, Codex, Cursor, Gemini, or any other AI workspace.
 
@@ -24,15 +24,17 @@ flowchart LR
     G["Agent Session"] -->|"Codex, Claude Code, Cursor, or another agent"| B
 
     B -->|"resume prompt + project brief"| C["Any Browser AI"]
-    B -->|"AGENTS.md + handoff.md + templates"| D["Codex"]
+    B -->|"AGENTS.md + handoff.md + templates"| D["Coding Agents"]
     B -->|"shared brief + role-ready context"| E["Cowork"]
     B -->|"CLAUDE.md + CONTINUE.md"| H["Claude Code"]
+    B -->|"Markdown context"| K["Local Models Or Technical Workflows"]
 
     B -->|"structured files"| F["Portable Pack"]
     F --> C
     F --> D
     F --> E
     F --> H
+    F --> K
 ```
 
 ## Start here if you only use AI in the browser
