@@ -61,7 +61,7 @@ Regras:
 
 Formato de entrega:
 
-- Se esta plataforma permitir gerar arquivo para download, gere um arquivo chamado `context-passport.md`.
+- Se esta plataforma permitir gerar arquivo para download, prefira criar um arquivo chamado `context-passport.md`.
 - Se nao for possivel gerar arquivo para download, entregue o conteudo completo no proprio chat dentro de um unico bloco de codigo Markdown.
 - Antes do bloco, escreva: `Arquivo sugerido: context-passport.md`.
 - Nao invente link de download. So ofereca link se o arquivo tiver sido realmente criado pela plataforma.
@@ -73,7 +73,7 @@ Formato de entrega:
 1. Abra o chat antigo.
 2. Cole o prompt acima.
 3. Veja se a IA entregou um arquivo para download ou um bloco de texto no chat.
-4. Se a IA gerar um arquivo para download, baixe o arquivo.
+4. Se voce estiver no ChatGPT, peca preferencialmente um arquivo `context-passport.md` para download.
 5. Se nao gerar arquivo, copie o bloco de texto e cole em um arquivo chamado `context-passport.md`. Voce nao precisa saber Markdown para usar.
 6. Abra outra IA.
 7. Cole o prompt de retomada que veio no final.

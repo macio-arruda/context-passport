@@ -54,7 +54,7 @@ Rules:
 
 Delivery format:
 
-- If this platform can create a downloadable file, create a file named `context-passport.md`.
+- If this platform can create a downloadable file, prefer creating a file named `context-passport.md`.
 - If a downloadable file is not possible, output the complete content directly in the chat inside one Markdown code block.
 - Before the block, write: `Suggested file: context-passport.md`.
 - Do not invent a download link. Only provide a link if the platform actually created the file.

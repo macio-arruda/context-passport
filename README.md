@@ -41,8 +41,8 @@ Use Context Passport with copy and paste:
 1. Open an important chat in ChatGPT, Claude, Gemini, or another AI tool.
 2. Copy the prompt from [`prompts/browser-chat-to-context-passport.md`](prompts/browser-chat-to-context-passport.md).
 3. Paste it into the same chat and ask the AI to generate your Context Passport.
-4. If the AI creates a downloadable `context-passport.md` file, download it.
-5. If it does not create a file, copy the Markdown block from the chat and save it as `context-passport.md`, or paste it directly into the next AI tool.
+4. In ChatGPT, ask for a downloadable `context-passport.md` file when available.
+5. If the tool does not create a file, copy the Markdown block from the chat and save it as `context-passport.md`, or paste it directly into the next AI tool.
 6. Open another AI tool and paste the resume prompt from the end of the passport.
 7. Attach or paste `context-passport.md` so the new AI can continue with the same context.
 
@@ -54,7 +54,7 @@ If the chat mixes many subjects, Context Passport should first create a **Topic 
 
 Important: if the original chat is extremely long or depends on attachments the AI can no longer access, the first passport may be incomplete. In that case, create a Topic Map first, paste the missing source material, and regenerate the passport for one topic at a time.
 
-The browser version does not depend on folder access. The AI either creates a real file when the platform supports it, or prints the complete passport in the chat for copy and paste. It should never invent a fake download link.
+The browser version does not depend on folder access or one-click automation. ChatGPT can create files in supported surfaces, while other tools may vary. If a real file is created, download it. If not, use the copy/paste fallback. The assistant should never invent a fake download link.
 
 ### Prompt in Portuguese
 
