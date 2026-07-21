@@ -18,16 +18,19 @@ Context Passport proposes a simple alternative:
 
 ```mermaid
 flowchart LR
-    A["GPT Browser Chat"] -->|"conversations, projects, decisions, files"| B["Context Passport"]
+    A["Browser AI Chat"] -->|"ChatGPT, Claude, Gemini, or another chat"| B["Context Passport"]
+    G["Agent Session"] -->|"Codex, Claude Code, Cursor, or another agent"| B
 
-    B -->|"resume prompt + project brief"| C["Claude"]
+    B -->|"resume prompt + project brief"| C["Any Browser AI"]
     B -->|"AGENTS.md + handoff.md + templates"| D["Codex"]
     B -->|"shared brief + role-ready context"| E["Cowork"]
+    B -->|"CLAUDE.md + CONTINUE.md"| H["Claude Code"]
 
     B -->|"structured files"| F["Portable Pack"]
     F --> C
     F --> D
     F --> E
+    F --> H
 ```
 
 ## Start here if you only use AI in the browser
@@ -49,7 +52,7 @@ Use Context Passport with copy and paste:
 
 That is the simplest version:
 
-> old chat -> Context Passport -> new AI
+> source chat -> Context Passport -> destination AI
 
 If the chat mixes many subjects, Context Passport should first create a **Topic Map** and ask which topic should be exported first. Then it generates one passport per topic, instead of mixing unrelated work into one confusing file.
 
