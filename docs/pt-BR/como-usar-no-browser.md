@@ -12,11 +12,12 @@ Use quando a conversa tem um tema principal.
 2. Abra o prompt em portugues: [`prompts/pt-BR/chat-do-browser-para-context-passport.md`](../../prompts/pt-BR/chat-do-browser-para-context-passport.md).
 3. Copie o texto dentro do bloco "Copie e cole".
 4. Cole no final do chat antigo.
-5. Copie a resposta que a IA gerar.
-6. Salve essa resposta em um arquivo de texto chamado `context-passport.md`.
-7. Abra a nova IA.
-8. Cole o prompt de retomada que veio no final do `context-passport.md`.
-9. Anexe ou cole o `context-passport.md`.
+5. Se a IA gerar um arquivo para download, baixe o arquivo.
+6. Se a IA nao gerar arquivo, copie o bloco de texto que ela escreveu.
+7. Salve esse conteudo em um arquivo de texto chamado `context-passport.md`, ou cole diretamente na nova IA.
+8. Abra a nova IA.
+9. Cole o prompt de retomada que veio no final do `context-passport.md`.
+10. Anexe ou cole o `context-passport.md`.
 
 Pronto. A nova IA deve conseguir continuar o trabalho.
 
@@ -55,6 +56,17 @@ Depois de colar o Context Passport na nova IA, ela deve conseguir responder:
 - qual e o proximo passo.
 
 Se a nova IA nao conseguir responder isso, o passaporte ficou fraco e deve ser gerado novamente com mais detalhes.
+
+## Como o arquivo e entregue
+
+No browser, a IA nem sempre consegue criar um arquivo real para download.
+
+Por isso, existem dois caminhos validos:
+
+1. **Com download:** se a plataforma criar `context-passport.md`, baixe o arquivo e leve para a nova IA.
+2. **Sem download:** se a plataforma nao criar arquivo, ela deve mostrar o conteudo no chat dentro de um bloco copiavel. Copie esse bloco e cole na nova IA ou salve manualmente como `context-passport.md`.
+
+O prompt foi escrito para nao prometer link falso. Ele so deve oferecer link quando o arquivo existir de verdade.
 
 ## Quando pode falhar
 

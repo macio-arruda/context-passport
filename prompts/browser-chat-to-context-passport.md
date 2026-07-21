@@ -51,4 +51,12 @@ Rules:
 - If source files or attachments were discussed but are not available, say so explicitly.
 - Make the output useful for both a human and a future AI agent.
 - Be concise where possible, but do not omit operationally important context.
+
+Delivery format:
+
+- If this platform can create a downloadable file, create a file named `context-passport.md`.
+- If a downloadable file is not possible, output the complete content directly in the chat inside one Markdown code block.
+- Before the block, write: `Suggested file: context-passport.md`.
+- Do not invent a download link. Only provide a link if the platform actually created the file.
+- After the block, write one short instruction: `Copy the block above, save it as context-passport.md, or paste it directly into the next AI tool.`
 ```
