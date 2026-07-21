@@ -1,0 +1,22 @@
+{
+  "name": "context-passport",
+  "version": "0.1.0",
+  "description": "Create portable context handoff packs for AI agents.",
+  "author": {
+    "name": "Macio Arruda"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Context Passport",
+    "shortDescription": "Move AI work between tools without losing context.",
+    "longDescription": "Context Passport converts long AI conversations and agent sessions into structured, portable handoff packs for ChatGPT, Claude, Codex, Cursor, Gemini, and other AI tools.",
+    "developerName": "Macio Arruda",
+    "category": "Productivity",
+    "capabilities": [
+      "Context handoff",
+      "Agent continuity",
+      "Markdown templates"
+    ],
+    "defaultPrompt": "Create a Context Passport for this conversation or project."
+  }
+}
