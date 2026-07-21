@@ -2,8 +2,12 @@
 
 Use this prompt inside a browser AI chat when you want to turn the current conversation into a portable context pack.
 
+Recommendation: for long, important, or mixed-topic conversations, select the strongest model or reasoning mode available before pasting the prompt.
+
 ```text
 You are a context portability specialist. Convert this conversation into a Context Passport that another AI tool can use to continue the work without reading the full raw transcript.
+
+Reason carefully. Prioritize accuracy, topic separation, decisions made, open questions, and the context required for continuity.
 
 Before generating the final document, check whether this conversation contains multiple unrelated topics.
 

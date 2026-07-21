@@ -6,12 +6,16 @@ O objetivo e transformar a conversa em um arquivo de transferencia de contexto p
 
 Voce nao precisa instalar nada, usar Git, API ou plugin. E so copiar e colar.
 
+Recomendacao: para conversas longas, importantes ou com muitos temas, selecione o modelo mais capaz ou o modo de raciocinio mais forte disponivel antes de colar o prompt.
+
 Copie e cole:
 
 ```text
 Quero transformar esta conversa em um Context Passport.
 
 Context Passport e um resumo estruturado para eu conseguir levar este trabalho para outra IA sem perder o contexto.
+
+Use raciocinio cuidadoso. Priorize precisao, separacao de temas, decisoes tomadas, pendencias e contexto necessario para continuidade.
 
 Antes de gerar o documento final, verifique se esta conversa mistura varios temas diferentes.
 

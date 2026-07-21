@@ -39,12 +39,13 @@ You do not need Git, a plugin, an API key, or technical setup.
 Use Context Passport with copy and paste:
 
 1. Open an important chat in ChatGPT, Claude, Gemini, or another AI tool.
-2. Copy the prompt from [`prompts/browser-chat-to-context-passport.md`](prompts/browser-chat-to-context-passport.md).
-3. Paste it into the same chat and ask the AI to generate your Context Passport.
-4. In ChatGPT, ask for a downloadable `context-passport.md` file when available.
-5. If the tool does not create a file, copy the Markdown block from the chat and save it as `context-passport.md`, or paste it directly into the next AI tool.
-6. Open another AI tool and paste the resume prompt from the end of the passport.
-7. Attach or paste `context-passport.md` so the new AI can continue with the same context.
+2. Select the strongest model or reasoning mode available for that tool, especially for long or mixed-topic chats.
+3. Copy the prompt from [`prompts/browser-chat-to-context-passport.md`](prompts/browser-chat-to-context-passport.md).
+4. Paste it into the same chat and ask the AI to generate your Context Passport.
+5. In ChatGPT, ask for a downloadable `context-passport.md` file when available.
+6. If the tool does not create a file, copy the Markdown block from the chat and save it as `context-passport.md`, or paste it directly into the next AI tool.
+7. Open another AI tool and paste the resume prompt from the end of the passport.
+8. Attach or paste `context-passport.md` so the new AI can continue with the same context.
 
 That is the simplest version:
 
@@ -53,6 +54,8 @@ That is the simplest version:
 If the chat mixes many subjects, Context Passport should first create a **Topic Map** and ask which topic should be exported first. Then it generates one passport per topic, instead of mixing unrelated work into one confusing file.
 
 Important: if the original chat is extremely long or depends on attachments the AI can no longer access, the first passport may be incomplete. In that case, create a Topic Map first, paste the missing source material, and regenerate the passport for one topic at a time.
+
+Model choice matters. A fast/default model can work for simple chats, but important handoffs benefit from the most capable model or reasoning setting available. In ChatGPT, use Thinking, higher reasoning effort, or Pro when available for long, sensitive, or mixed-topic conversations.
 
 The browser version does not depend on folder access or one-click automation. ChatGPT, Claude, and Gemini all have documented file-generation or file-download paths in supported surfaces, but details vary by tool, plan, workspace, file type, and interface. If a real file is created, download it. If not, use the copy/paste fallback. The assistant should never invent a fake download link.
 

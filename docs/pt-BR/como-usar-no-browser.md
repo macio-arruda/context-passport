@@ -10,16 +10,31 @@ Use quando a conversa tem um tema principal.
 
 1. Abra o chat antigo.
 2. Abra o prompt em portugues: [`prompts/pt-BR/chat-do-browser-para-context-passport.md`](../../prompts/pt-BR/chat-do-browser-para-context-passport.md).
-3. Copie o texto dentro do bloco "Copie e cole".
-4. Cole no final do chat antigo.
-5. Se voce estiver no ChatGPT, peca para ele gerar um arquivo `context-passport.md` para download, quando disponivel.
-6. Se a IA nao gerar arquivo, copie o bloco de texto que ela escreveu.
-7. Salve esse conteudo em um arquivo de texto chamado `context-passport.md`, ou cole diretamente na nova IA.
-8. Abra a nova IA.
-9. Cole o prompt de retomada que veio no final do `context-passport.md`.
-10. Anexe ou cole o `context-passport.md`.
+3. Se puder escolher, use o modelo mais capaz ou o modo de raciocinio mais forte disponivel.
+4. Copie o texto dentro do bloco "Copie e cole".
+5. Cole no final do chat antigo.
+6. Se voce estiver no ChatGPT, peca para ele gerar um arquivo `context-passport.md` para download, quando disponivel.
+7. Se a IA nao gerar arquivo, copie o bloco de texto que ela escreveu.
+8. Salve esse conteudo em um arquivo de texto chamado `context-passport.md`, ou cole diretamente na nova IA.
+9. Abra a nova IA.
+10. Cole o prompt de retomada que veio no final do `context-passport.md`.
+11. Anexe ou cole o `context-passport.md`.
 
 Pronto. A nova IA deve conseguir continuar o trabalho.
+
+## Escolha do modelo
+
+A qualidade do Context Passport depende da qualidade do modelo que vai ler a conversa antiga.
+
+Para chats simples, um modelo rapido pode funcionar. Para conversas longas, temas misturados, decisoes importantes ou contexto sensivel, prefira o modelo mais forte disponivel.
+
+No ChatGPT, isso significa usar Thinking, maior nivel de raciocinio ou Pro quando estiver disponivel. A documentacao atual da OpenAI descreve Instant como uma opcao rapida para tarefas do dia a dia, Thinking como raciocinio mais profundo para tarefas complexas, e Pro como a opcao de maior capacidade para tarefas dificeis e fluxos longos.
+
+Em resumo:
+
+- chat simples: modelo rapido pode bastar;
+- chat longo ou importante: use modelo mais capaz;
+- varios temas misturados: use raciocinio mais forte e gere primeiro um Mapa de Temas.
 
 ## Se o chat mistura muitos assuntos
 
