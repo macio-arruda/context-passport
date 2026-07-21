@@ -1,6 +1,6 @@
 # Context Passport
 
-Portable context packs for AI agents.
+Move an AI conversation from one tool to another without losing context.
 
 Context Passport turns long AI conversations, project chats, research threads, and agent sessions into structured handoff packs that can be reused in ChatGPT, Claude, Codex, Cursor, Gemini, or any other AI workspace.
 
@@ -29,6 +29,31 @@ flowchart LR
     F --> D
     F --> E
 ```
+
+## Start here if you only use AI in the browser
+
+You do not need to install anything.
+
+You do not need Git, a plugin, an API key, or technical setup.
+
+Use Context Passport with copy and paste:
+
+1. Open an important chat in ChatGPT, Claude, Gemini, or another AI tool.
+2. Copy the prompt from [`prompts/browser-chat-to-context-passport.md`](prompts/browser-chat-to-context-passport.md).
+3. Paste it into the same chat and ask the AI to generate your Context Passport.
+4. Copy the answer into a text file named `context-passport.md`. You do not need to understand Markdown to use it.
+5. Open another AI tool and paste the resume prompt from the end of the file.
+6. Attach or paste `context-passport.md` so the new AI can continue with the same context.
+
+That is the simplest version:
+
+> old chat -> Context Passport -> new AI
+
+### Prompt in Portuguese
+
+If your audience is Portuguese-speaking, use:
+
+[`prompts/pt-BR/chat-do-browser-para-context-passport.md`](prompts/pt-BR/chat-do-browser-para-context-passport.md)
 
 ## Two use cases
 
@@ -83,6 +108,8 @@ context-passport/
   prompts/
     browser-chat-to-context-passport.md
     agent-session-to-handoff.md
+    pt-BR/
+      chat-do-browser-para-context-passport.md
   templates/
     context-passport.md
     agent-handoff.md
@@ -136,6 +163,12 @@ For browser chats:
 
 ```text
 Use prompts/browser-chat-to-context-passport.md on this conversation and generate a Context Passport pack.
+```
+
+In Portuguese:
+
+```text
+Use prompts/pt-BR/chat-do-browser-para-context-passport.md nesta conversa e gere um Context Passport.
 ```
 
 For agent sessions:
