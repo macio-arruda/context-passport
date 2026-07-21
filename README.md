@@ -18,13 +18,13 @@ Context Passport proposes a simple alternative:
 
 ```mermaid
 flowchart LR
-    A["GPT Browser Chat<br/>Long conversations, projects, decisions, files"] --> B["Context Passport<br/>Extract, structure, redact, validate"]
+    A["GPT Browser Chat"] -->|"conversations, projects, decisions, files"| B["Context Passport"]
 
-    B --> C["Claude<br/>Resume prompt + project brief"]
-    B --> D["Codex<br/>AGENTS.md + handoff.md + templates"]
-    B --> E["Cowork<br/>Shared brief + role-ready context"]
+    B -->|"resume prompt + project brief"| C["Claude"]
+    B -->|"AGENTS.md + handoff.md + templates"| D["Codex"]
+    B -->|"shared brief + role-ready context"| E["Cowork"]
 
-    B --> F["Portable Pack<br/>context-passport.md<br/>decisions.md<br/>open-questions.md<br/>next-actions.md"]
+    B -->|"structured files"| F["Portable Pack"]
     F --> C
     F --> D
     F --> E
