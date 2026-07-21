@@ -26,6 +26,13 @@ REQUIRED_SECTIONS = {
         "Next Actions",
         "Resume Prompt",
     ],
+    "topic-map": [
+        "Purpose",
+        "Topics",
+        "Recommended Passports",
+        "Topic Details",
+        "Cross-Topic Notes",
+    ],
 }
 
 
@@ -58,4 +65,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -49,6 +49,8 @@ That is the simplest version:
 
 > old chat -> Context Passport -> new AI
 
+If the chat mixes many subjects, Context Passport should first create a **Topic Map**. Then it can generate one passport per topic, instead of mixing unrelated work into one confusing file.
+
 ### Prompt in Portuguese
 
 If your audience is Portuguese-speaking, use:
@@ -111,6 +113,7 @@ context-passport/
     pt-BR/
       chat-do-browser-para-context-passport.md
   templates/
+    topic-map.md
     context-passport.md
     agent-handoff.md
     resume-prompt.md

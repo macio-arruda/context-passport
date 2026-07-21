@@ -13,6 +13,22 @@ Quero transformar esta conversa em um Context Passport.
 
 Context Passport e um resumo estruturado para eu conseguir levar este trabalho para outra IA sem perder o contexto.
 
+Antes de gerar o documento final, verifique se esta conversa mistura varios temas diferentes.
+
+Se houver varios temas, faca primeiro um "Mapa de Temas" com:
+
+- nome de cada tema;
+- resumo em uma frase;
+- status de cada tema;
+- se o tema merece um Context Passport separado;
+- qual tema parece ser o principal.
+
+Depois disso:
+
+- se existir apenas um tema principal, gere um Context Passport focado nele e coloque os outros temas em uma secao chamada "Temas paralelos ou fora de escopo";
+- se existirem varios temas importantes, recomende quais Context Passports separados eu deveria gerar e pergunte se quero gerar todos ou apenas um;
+- se eu tiver pedido explicitamente um tema especifico, ignore os demais e gere apenas o passaporte desse tema.
+
 Gere um documento em texto Markdown com estas secoes:
 
 1. Titulo
@@ -34,6 +50,7 @@ Gere um documento em texto Markdown com estas secoes:
 Regras:
 
 - Separe fatos confirmados de suposicoes.
+- Separe temas diferentes em blocos diferentes. Nao misture decisoes de um tema com outro.
 - Nao invente informacoes que nao apareceram na conversa.
 - Se algum arquivo, link ou anexo foi citado mas voce nao consegue acessar, diga isso claramente.
 - Remova ou sinalize dados sensiveis, senhas, chaves de API, credenciais e informacoes privadas desnecessarias.
@@ -52,3 +69,22 @@ Regras:
 7. Anexe ou cole o `context-passport.md`.
 
 Pronto: a nova IA tera o contexto essencial sem precisar ler todo o historico bruto.
+
+## Se o chat tiver muitos assuntos misturados
+
+Use este prompt alternativo primeiro:
+
+```text
+Esta conversa mistura varios assuntos. Antes de gerar qualquer Context Passport, crie um Mapa de Temas.
+
+Para cada tema encontrado, informe:
+
+1. Nome do tema
+2. Resumo em uma frase
+3. Principais decisoes
+4. Status atual
+5. Pendencias
+6. Se vale gerar um Context Passport separado
+
+No final, recomende quais passaportes eu deveria gerar e em que ordem.
+```

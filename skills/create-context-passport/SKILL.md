@@ -23,6 +23,7 @@ Create the smallest useful set of files for the user's destination:
    - Destination examples: ChatGPT, Claude, Codex, Claude Code, Cursor, Gemini, generic Markdown.
 
 2. Extract operational context.
+   - If the source mixes unrelated subjects, create a topic map before writing the final passport.
    - Original goal.
    - How the goal evolved.
    - Chronology.
@@ -38,6 +39,7 @@ Create the smallest useful set of files for the user's destination:
    - Next actions.
 
 3. Choose the right template.
+   - Mixed conversation: start with `templates/topic-map.md`.
    - Browser/project migration: use `templates/context-passport.md`.
    - Agent/coding migration: use `templates/agent-handoff.md`.
    - Generic continuation: include `templates/resume-prompt.md`.
@@ -67,4 +69,3 @@ It should answer:
 - What should not be repeated?
 - What is still uncertain?
 - What should the next agent do first?
-
