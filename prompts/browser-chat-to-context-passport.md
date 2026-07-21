@@ -15,11 +15,13 @@ If it does, first create a Topic Map with:
 - whether it deserves a separate Context Passport;
 - which topic appears to be the main one.
 
-Then:
+Then follow this decision rule:
 
 - if there is one main topic, generate a focused Context Passport for it and put other topics in a section called "Parallel or out-of-scope topics";
-- if there are multiple important topics, recommend which separate Context Passports should be generated and ask whether the user wants all of them or only one;
+- if there are multiple important topics and the user did not ask for one specific topic, stop after the Topic Map and ask which passport to generate first;
 - if the user requested a specific topic, ignore the others and generate only that passport.
+
+Do not mix unrelated topics into one Context Passport just to finish in one response.
 
 Create a Markdown document with the following sections:
 

@@ -23,11 +23,13 @@ Se houver varios temas, faca primeiro um "Mapa de Temas" com:
 - se o tema merece um Context Passport separado;
 - qual tema parece ser o principal.
 
-Depois disso:
+Depois siga esta regra de decisao:
 
 - se existir apenas um tema principal, gere um Context Passport focado nele e coloque os outros temas em uma secao chamada "Temas paralelos ou fora de escopo";
-- se existirem varios temas importantes, recomende quais Context Passports separados eu deveria gerar e pergunte se quero gerar todos ou apenas um;
+- se existirem varios temas importantes e eu nao tiver pedido um tema especifico, pare depois do Mapa de Temas e pergunte qual passaporte eu quero gerar primeiro;
 - se eu tiver pedido explicitamente um tema especifico, ignore os demais e gere apenas o passaporte desse tema.
+
+Nao misture temas diferentes em um unico Context Passport so para terminar em uma resposta.
 
 Gere um documento em texto Markdown com estas secoes:
 

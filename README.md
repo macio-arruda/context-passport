@@ -49,13 +49,17 @@ That is the simplest version:
 
 > old chat -> Context Passport -> new AI
 
-If the chat mixes many subjects, Context Passport should first create a **Topic Map**. Then it can generate one passport per topic, instead of mixing unrelated work into one confusing file.
+If the chat mixes many subjects, Context Passport should first create a **Topic Map** and ask which topic should be exported first. Then it generates one passport per topic, instead of mixing unrelated work into one confusing file.
 
 ### Prompt in Portuguese
 
 If your audience is Portuguese-speaking, use:
 
 [`prompts/pt-BR/chat-do-browser-para-context-passport.md`](prompts/pt-BR/chat-do-browser-para-context-passport.md)
+
+Portuguese quick guide:
+
+[`docs/pt-BR/como-usar-no-browser.md`](docs/pt-BR/como-usar-no-browser.md)
 
 ## Two use cases
 
@@ -107,6 +111,8 @@ context-passport/
   README.md
   docs/
     product-strategy.md
+    pt-BR/
+      como-usar-no-browser.md
   prompts/
     browser-chat-to-context-passport.md
     agent-session-to-handoff.md
