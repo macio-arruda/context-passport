@@ -56,6 +56,27 @@ Depois de colar o Context Passport na nova IA, ela deve conseguir responder:
 
 Se a nova IA nao conseguir responder isso, o passaporte ficou fraco e deve ser gerado novamente com mais detalhes.
 
+## Quando pode falhar
+
+O processo funciona melhor quando a IA ainda consegue acessar o contexto importante da conversa antiga.
+
+Pode falhar ou ficar incompleto quando:
+
+- o chat antigo e longo demais;
+- a conversa misturou muitos assuntos;
+- arquivos ou imagens foram citados, mas a IA nao consegue mais acessa-los;
+- partes importantes estavam em anexos que nao foram incluidos;
+- a IA gerou um resumo generico demais;
+- o Context Passport foi levado para outra IA sem o prompt de retomada.
+
+Se isso acontecer, use uma destas saidas:
+
+1. Peca primeiro um **Mapa de Temas**.
+2. Gere um Context Passport por tema.
+3. Cole trechos importantes do chat antigo junto com o prompt.
+4. Inclua os arquivos ou anexos importantes quando possivel.
+5. Na nova IA, pergunte: `Com base neste Context Passport, o que ainda esta incerto?`
+
 ## O que nao colocar
 
 Antes de levar o arquivo para outra IA, revise se ele tem:
@@ -67,4 +88,3 @@ Antes de levar o arquivo para outra IA, revise se ele tem:
 - informacoes confidenciais que nao deveriam sair da ferramenta original.
 
 Se tiver, remova antes de compartilhar.
-

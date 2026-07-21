@@ -51,6 +51,8 @@ That is the simplest version:
 
 If the chat mixes many subjects, Context Passport should first create a **Topic Map** and ask which topic should be exported first. Then it generates one passport per topic, instead of mixing unrelated work into one confusing file.
 
+Important: if the original chat is extremely long or depends on attachments the AI can no longer access, the first passport may be incomplete. In that case, create a Topic Map first, paste the missing source material, and regenerate the passport for one topic at a time.
+
 ### Prompt in Portuguese
 
 If your audience is Portuguese-speaking, use:
