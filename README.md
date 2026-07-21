@@ -14,6 +14,22 @@ Context Passport proposes a simple alternative:
 
 > Memory should not lock you into a tool. Your context should travel with you.
 
+## How context moves
+
+```mermaid
+flowchart LR
+    A["GPT Browser Chat<br/>Long conversations, projects, decisions, files"] --> B["Context Passport<br/>Extract, structure, redact, validate"]
+
+    B --> C["Claude<br/>Resume prompt + project brief"]
+    B --> D["Codex<br/>AGENTS.md + handoff.md + templates"]
+    B --> E["Cowork<br/>Shared brief + role-ready context"]
+
+    B --> F["Portable Pack<br/>context-passport.md<br/>decisions.md<br/>open-questions.md<br/>next-actions.md"]
+    F --> C
+    F --> D
+    F --> E
+```
+
 ## Two use cases
 
 ### 1. Browser Chat To Context Passport
@@ -151,4 +167,3 @@ Portuguese version:
 ## License
 
 MIT.
-
